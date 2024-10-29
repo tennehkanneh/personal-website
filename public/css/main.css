@@ -1,0 +1,178 @@
+@import url("https://fonts.googleapis.com/css2?family=Krona+One&display=swap");
+
+/* Remove margin, padding & Put each section in a box*/
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    display: grid;
+    /* Header, main content, and footer in rows */
+    grid-template-rows: auto auto 1fr auto;
+    /* Page set up */
+    grid-template-areas:
+        "header"
+        "nav"
+        "main"
+        "footer";
+    /* Make it the min height of the display */
+    min-height: 100vh;
+    margin: 0;
+
+    /* Background Color */
+    background-color: #E1E7EA;
+    /* Text Color */
+    color: #000;
+
+    /* Font */
+    font-family: "Krona One", sans-serif;
+}
+
+/* Header */
+header {
+    /* Position in Header area */
+    grid-area: header;
+
+    /* Background Color */
+    background-color: #1F3A45;
+
+    /* Text */
+    text-align: center;
+    color: white;
+
+    /* Header size */
+    height: 100px;
+    padding: 25px;
+    padding-bottom: 110px;
+
+    /* Keep Header Visabel*/
+    position: sticky;
+    top: 0;
+}
+
+/* Adjust Size*/ 
+header h1 {
+    font-size: 46px;
+}
+
+header h2 {
+    font-size: 26px;
+}
+
+/* Navigation Bar */
+nav {
+    /* Position in Nav area */
+    grid-area: nav;
+
+    /* Keep Header Visabel*/
+    position: sticky;
+    align-self: start;
+    top: 100px;
+}
+
+/* Nav unorder list*/
+nav ul {
+    /* Display Horizontally */ 
+    display: flex;
+    
+    /* Remove Bullet Points*/ 
+    list-style: none;
+
+    /* Move content Center and give background*/
+    justify-content: center;
+    background-color: #1F3A45;
+}
+
+/* Margin Between Nav Options */
+nav ul li {
+    margin: 0 10px;
+}
+
+/* Style Nav Options*/
+nav ul li a {
+    /* Stretch the display across the screen */
+    display: block;
+    background-color: #1F3A45;
+
+    /* Padding between nav items and main conent*/ 
+    padding: 10px 15px;
+
+    /* Change color to white default */
+    color: white;
+
+    /* Remove Link decoration*/ 
+    text-decoration: none;
+
+    /* Round cornors to give file look*/
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+}
+
+/* Hover effect */
+nav ul li a:hover {
+    background-color: #E1E7EA;
+    color: #000;
+}
+
+/* Active link styling - this will be applied when the nav item is "selected" */
+nav ul li a.active {
+    background-color: #E1E7EA;
+    color: #000;
+
+    /* Creates the folder effect by raising the link visually */
+    border-bottom: 2px solid #E1E7EA;
+    position: relative;
+    z-index: 1;
+}
+
+/* Folder-like transition for inactive links */
+nav ul li a:not(.active) {
+    position: relative;
+    top: 2px;
+}
+
+main {
+    grid-area: main;
+}
+
+/* Footer */
+footer {
+    /* Position in Footer Area */
+    grid-area: footer;
+
+    /* Keep Footer Visabel*/
+    position: sticky;
+    bottom: 0;
+
+    /* Header size */
+    height: 55px;
+
+    padding-top: 10px;
+
+    /* Background Color */
+    background-color: #1F3A45;
+
+    /* Text */
+    text-align: center;
+
+    /* Text Line Up Across Screen */
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+/* Footer Links Styling */
+footer a {
+    color: white;
+}
+
+footer a:hover {
+    opacity: 50%;
+}
+
+footer a:visited {
+    color: rgb(255, 0, 0);
+}
+
