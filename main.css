@@ -1,7 +1,12 @@
-* {
+body {
     margin: 0px;
     padding: 0px;
     background-color: #FFFAF1;
+}
+
+header {
+    text-align: center;
+    margin-top: 10px;
 }
 
 /* Name at to of page*/
@@ -14,28 +19,20 @@ h3 {
     font-size: 24px;
 }
 
-header {
-    text-align: center;
-    padding-top: 20px;
-}
-
-aside {
-    float: left;
-}
-
-section {
-    float: right;
-}
-
-
-
 footer {
+    /* Keep footer fixed to whole bottom of page */
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+
+    /* Display contact text right next to each other */
     display: flex;
     justify-content: space-between; 
-    align-items: center;
+    align-items: center; 
+
 }
 
 .contact {
-    padding-left: 10px;
-    padding-right: 10zpx;
+    margin-left: 10px;
+    padding-right: 10px;
 }
