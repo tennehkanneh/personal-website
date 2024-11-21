@@ -1,0 +1,41 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    background-color: #FFFAF1;
+}
+
+/* Name at to of page*/
+h1 {
+    font-size: 40px ;
+}
+
+/* Location at top of page */
+h3 {
+    font-size: 24px;
+}
+
+header {
+    text-align: center;
+    padding-top: 20px;
+}
+
+aside {
+    float: left;
+}
+
+section {
+    float: right;
+}
+
+
+
+footer {
+    display: flex;
+    justify-content: space-between; 
+    align-items: center;
+}
+
+.contact {
+    padding-left: 10px;
+    padding-right: 10zpx;
+}
