@@ -34,16 +34,7 @@ body {  /* Important: Add this to the body */
     color: #AC1313;
     font-family: 'Nico Mojo';
 }
-
-.info h3 {
-    white-space: nowrap;
-    opacity: 50%;
     
-
-#major-degree {
-    display: flex;
-}
-
 .bio {
     padding: 20px;
    
@@ -55,5 +46,3 @@ body {  /* Important: Add this to the body */
 .bio p {
     font-size: 11px;
 }
-
-/* ... rest of your CSS for .info, .bio, p, etc. ... */
