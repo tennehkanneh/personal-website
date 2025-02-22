@@ -64,7 +64,7 @@ main {
     width: 100%;
 }
 
-.cards h4 {
+.cards-container h4 {
     margin: 0; /* Remove default h4 margins */
 }
 
@@ -120,8 +120,8 @@ main {
 }
 
 /* Optional: Hover effect */
-.cards div:hover {
+.cards-container div:hover {
     transform: translateY(-5px); /* Slightly move up on hover */
     transition: transform 0.3s ease; /* Smooth transition */
-    box-shadow: 8px 8px 15px rgba(0, 0, 0, 0.7); /* make shadow larger on hover */
+    box-shadow: 8px 8px 15px #FB9B00; /* make shadow larger on hover */
 }
