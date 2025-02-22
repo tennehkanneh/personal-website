@@ -119,7 +119,6 @@ main {
 
 }
 
-/* Optional: Hover effect */
 .cards-container div:hover {
     transform: translateY(-5px); /* Slightly move up on hover */
     transition: transform 0.3s ease; /* Smooth transition */
