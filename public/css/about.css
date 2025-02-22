@@ -1,35 +1,39 @@
-/* ... other styles in your main.css ... */
-
 @font-face {
-    font-family: 'Nico Mojo'; /* Give your font a name */
+    font-family: 'Nico Mojo';
     src: url('/public/src/NicoMoji-Regular.ttf') format('truetype'); /* Path to your TTF file */
 
-  }
-  @import url('https://fonts.googleapis.com/css2?family=Martian+Mono:wght@100..800&display=swap');
-
-body {  /* Important: Add this to the body */
-    display: flex;
-    justify-content: center; /* Centers horizontally */
-    align-items: center;     /* Centers vertically (if needed) */
-    min-height: 100vh;      /* Makes sure body takes up full viewport height */
-    margin: 0;             /* Remove default body margins */
 }
 
-.container {
+@import url('https://fonts.googleapis.com/css2?family=Martian+Mono:wght@100..800&display=swap');
+
+body { 
     display: flex;
-    max-width: 1200px; /* Or a specific width if you prefer */
-    padding: 20px;
-    align-items: center; /* Vertically center .info and .bio */
-    gap: 10px;
+    justify-content: flex-start; /* Left-align body content */
+    align-items: center; /* Vertically center body content */
+    min-height: 100vh;      
+    margin: 0; 
+}          
+
+.container {
+    /* Info column, cards column*/
+    display: grid;
+    grid-template-columns: auto auto; 
+
     font-family: 'Martian Mono', monospace;
+
+    
+    padding: 0px;
+    gap: 0px;
+    margin: 0px;
+    align-items: center; /* Vertically center .info and .bio */
 }
 
 .info {
     padding: 20px;
-    font-family: 'Martian Mono', monospace;
+    padding-left: 100px;
 }
 
-.info h1 {
+h1 {
     white-space: nowrap;
     color: #AC1313;
     font-family: 'Nico Mojo';
@@ -38,18 +42,26 @@ body {  /* Important: Add this to the body */
 }
 
 .info h2 {
-    padding:0px;
-    gap:0px
+    padding: 0px;
+    gap: 0px;
+    
+}
+
+main {
+    align-items: right;
 }
     
 .cards-container {
+    align-self: center;
+
     display: grid;
     grid-template-columns: 1fr 1fr;
-    grid-template-rows: 1fr 1fr 1fr;
-    gap: 20px;
-    padding: 20px;
-    height: 400px;
-    position: relative;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+
+    /* Gap and Padding causing overflow*/
+    gap: 0px;
+    padding: 0px;
+    width: 100%;
 }
 
 .cards h4 {
@@ -87,9 +99,9 @@ body {  /* Important: Add this to the body */
 }
 
 #blog {
-    /* Place in the second column and second row */
+    /* Place in the second column and middle of 4 rows */
     grid-column: 2; 
-    grid-row: 2; 
+    grid-row: 2/4; 
 
     /* align to the start of the grid cell*/
     align-self: center; 
@@ -97,9 +109,9 @@ body {  /* Important: Add this to the body */
 }
 
 #other-things {
-    /* Place in the first column and thrid row */
+    /* Place in the first column and fourth row */
     grid-column: 1; 
-    grid-row: 3; 
+    grid-row: 4; 
 
     /* align to the end of the grid cell */
     align-self: center; 
