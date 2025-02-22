@@ -33,16 +33,83 @@ body {  /* Important: Add this to the body */
     white-space: nowrap;
     color: #AC1313;
     font-family: 'Nico Mojo';
+    padding: 0px;
+    gap:0px;
+}
+
+.info h2 {
+    padding:0px;
+    gap:0px
 }
     
-.bio {
+.cards-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    gap: 20px;
     padding: 20px;
-   
-
-    outline: auto;
-    outline-width: 2in;
+    height: 400px;
+    position: relative;
 }
 
-.bio p {
-    font-size: 11px;
+.cards h4 {
+    margin: 0; /* Remove default h4 margins */
+}
+
+.cards-container div {
+    background-color: #AC1313;
+    
+    color: white;
+    padding: 20px;
+    text-align: center;
+
+    /* Size of Cards */
+    width: 200px;
+    height: 105px;
+
+    /* Center Text in Box */
+    display: flex;
+    align-items: center; 
+    justify-content: center;
+
+    /* Box Shadow */
+    box-shadow: 15px 15px black;
+}
+
+
+#personal-statement {
+    /* Place in the first column and first row*/
+    grid-column: 1; 
+    grid-row: 1;  
+
+    align-self: center;
+    justify-self: center;
+}
+
+#blog {
+    /* Place in the second column and second row */
+    grid-column: 2; 
+    grid-row: 2; 
+
+    /* align to the start of the grid cell*/
+    align-self: center; 
+    justify-self: center;
+}
+
+#other-things {
+    /* Place in the first column and thrid row */
+    grid-column: 1; 
+    grid-row: 3; 
+
+    /* align to the end of the grid cell */
+    align-self: center; 
+    justify-self: center;
+
+}
+
+/* Optional: Hover effect */
+.cards div:hover {
+    transform: translateY(-5px); /* Slightly move up on hover */
+    transition: transform 0.3s ease; /* Smooth transition */
+    box-shadow: 8px 8px 15px rgba(0, 0, 0, 0.7); /* make shadow larger on hover */
 }
