@@ -1,45 +1,41 @@
 <!doctype html>
-
 <head>
   <link rel="stylesheet" href="public/css/about.css">
+  <script src="/public/js/about.js"></script>
 </head>
 
 <body>
+  <!----------------------------------------- START OF: Container ----------------------------------------->
   <div class="container">
-    <!----------------------------------------- START OF: Name, School, Major, etc. ----------------------------------------->
+    <!----------------------------------------- START OF: Aside ----------------------------------------->
     <aside class="info">
       <h1 style="font-size:45px;">Tenneh Kanneh</h1>
       <h2 style="font-size: 25px;">Software Developer</h2>
       <span>
-        <h2 style="font-size: 20px; display: inline; vertical-align: middle;">Boise State Univeristy</h2>
-        <h3 style="font-size: 16px; opacity: 50%; display: inline; vertical-align: middle; break-before: always;">
-          Computer Science</h3>
+        <h2 style="font-size: 20px; display: inline; vertical-align: middle;">Boise State University</h2>
+        <h3 style="font-size: 16px; opacity: 50%; display: inline; vertical-align: middle;">Computer Science</h3>
       </span>
     </aside>
-    <!----------------------------------------- END OF: Name, School, Major, etc. ----------------------------------------->
+  <!----------------------------------------- END OF: Aside ----------------------------------------->
 
-
-    <!------------------------------------------------- START OF: Content ------------------------------------------------->
+  <!----------------------------------------- START OF: Main ----------------------------------------->
     <main class="main">
-      <!----------------------------- START OF: Cards (Personal Statment, Blog, Other Things) ------------------------------->
-      <div class="cards-container">
-        <button onclick="aboutContent('personal-statement')" id="personal-statement">
+      <!----------------------------------------- START OF: Display Area ----------------------------------------->
+      <div class="display-area" id="displayArea">
+        <button id="personalStatement">
           <h4>PERSONAL STATEMENT</h4>
         </button>
-
-        <button onclick="aboutContent('blog')" id="blog">
+        <button id="blog">
           <h4>BLOG</h4>
         </button>
-
-        <button onclick="aboutContent('other-things')" id="other-things">
+        <button id="otherThings">
           <h4>OTHER THINGS</h4>
-          </butoon>
+        </button>
       </div>
-
-      <!----------------------------- END OF: Cards (Personal Statment, Blog, Other Things) ---------------------------------->
+      <!----------------------------------------- END OF: Display Area ----------------------------------------->
     </main>
-    <!---------------------------------------------------- END OF: Content ---------------------------------------------------->
+    <!----------------------------------------- END OF: Main ----------------------------------------->
   </div>
+  <!----------------------------------------- END OF: Container ----------------------------------------->
 </body>
-
 </html>
