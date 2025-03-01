@@ -1,41 +1,46 @@
 <!doctype html>
+
 <head>
-  <link rel="stylesheet" href="public/css/about.css">
-  <script src="/public/js/about.js"></script>
+  <link rel="stylesheet" href="/public/css/about.css">
 </head>
 
 <body>
-  <!----------------------------------------- START OF: Container ----------------------------------------->
-  <div class="container">
-    <!----------------------------------------- START OF: Aside ----------------------------------------->
-    <aside class="info">
-      <h1 style="font-size:45px;">Tenneh Kanneh</h1>
-      <h2 style="font-size: 25px;">Software Developer</h2>
-      <span>
-        <h2 style="font-size: 20px; display: inline; vertical-align: middle;">Boise State University</h2>
-        <h3 style="font-size: 16px; opacity: 50%; display: inline; vertical-align: middle;">Computer Science</h3>
-      </span>
-    </aside>
-  <!----------------------------------------- END OF: Aside ----------------------------------------->
+  <section id="about-section">
+    <!----------------------------------------- START OF: Container ----------------------------------------->
+    <div class="container">
+      <!----------------------------------------- START OF: Aside ----------------------------------------->
+      <aside class="info">
+        <h1 style="font-size:45px;">Here is my Name</h1>
+        <h2 style="font-size: 25px;">Software Developer</h2>
+        <span>
+          <h2 style="font-size: 20px; display: inline; vertical-align: middle;">State University</h2>
+          <h3 style="font-size: 16px; opacity: 50%; display: inline; vertical-align: middle;">Computer Science</h3>
+        </span>
+      </aside>
+      <!----------------------------------------- END OF: Aside ----------------------------------------->
 
-  <!----------------------------------------- START OF: Main ----------------------------------------->
-    <main class="main">
-      <!----------------------------------------- START OF: Display Area ----------------------------------------->
-      <div class="display-area" id="displayArea">
-        <button id="personalStatement">
-          <h4>PERSONAL STATEMENT</h4>
-        </button>
-        <button id="blog">
-          <h4>BLOG</h4>
-        </button>
-        <button id="otherThings">
-          <h4>OTHER THINGS</h4>
-        </button>
-      </div>
-      <!----------------------------------------- END OF: Display Area ----------------------------------------->
-    </main>
-    <!----------------------------------------- END OF: Main ----------------------------------------->
-  </div>
+      <!----------------------------------------- START OF: Main ----------------------------------------->
+      <main class="main">
+        <!----------------------------------------- START OF: Card Buttons ----------------------------------------->
+        <div class="card-buttons" id="cardButtons">
+          <button id="personalStatement">
+            <h4>PERSONAL STATEMENT</h4>
+          </button>
+          <button id="blog">
+            <h4>BLOG</h4>
+          </button>
+          <button id="otherThings">
+            <h4>OTHER THINGS</h4>
+          </button>
+        </div>
+        <!----------------------------------------- END OF: Card Buttons ----------------------------------------->
+        <div id="display-Area"></div> <!-- Display New Content -->
+        <button id="backButton" style="display: none;">Back</button> <!-- Back to Cards -->
+      </main>
+      <!----------------------------------------- END OF: Main ----------------------------------------->
+    </div>
+  </section>
   <!----------------------------------------- END OF: Container ----------------------------------------->
 </body>
+
 </html>
