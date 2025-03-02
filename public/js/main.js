@@ -1,5 +1,5 @@
 function loadPage(page) {
-    fetch(`public/pages/${page}.html`)
+    fetch(`public/views/${page}.html`)
         .then(response => {
             if (!response.ok) throw new Error("Page not found");
             return response.text();
