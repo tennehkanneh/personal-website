@@ -44,7 +44,13 @@ h1 {
 .info h2 {
     padding: 0px;
     gap: 0px;
+    color: black;
     
+}
+
+.info h3 {
+    color: black;
+    opacity: 50%;
 }
 
 main {

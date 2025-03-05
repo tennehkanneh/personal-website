@@ -9,13 +9,15 @@ function loadPage(page, event = null) {
             return response.text();
         })
         .then(html => {
+
             document.getElementById("content").innerHTML = html;
             window.history.pushState({ page: page }, null, page);
             sessionStorage.setItem(page, html);
+
         })
         .catch(error => {
             console.error("Error loading content:", error);
-            document.getElementById("content").innerHTML = "<p>Error loading page.</p>";
+            document.getElementById("content-area").innerHTML = "<p>Error loading page.</p>";
         });
 }
 
