@@ -1,8 +1,8 @@
 main {
-    padding-top: 239px;
+    padding-top: 80px;
 }
+
 h1.call-to-action {
-    top: 100%;
     background-color: #AC1313;
     display: block;
     width: 100%;
@@ -15,6 +15,7 @@ h1.call-to-action {
 }
 
 .contact-container {
+    color: black;
     height: 100vh;
     display: flex;
     align-items: center;
@@ -28,7 +29,6 @@ h1.call-to-action {
 }
 
 .contact-right {
-    display: flex;
     flex-direction: right;
     align-items: start;
     gap: 20px;
