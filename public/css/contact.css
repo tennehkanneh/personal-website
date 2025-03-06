@@ -1,20 +1,10 @@
 main {
     padding-top: 80px;
+    display: grid;
+    grid-template-columns: 1fr 1fr; 
 }
 
-h1.call-to-action {
-    background-color: #AC1313;
-    display: block;
-    width: 100%;
-    margin: 0px;
-    padding: 0px 0px;
-    border-bottom: 10px solid black;
-
-    color: white;
-    text-align: center;
-}
-
-.contact-container {
+.email-communication {
     color: black;
     height: 100vh;
     display: flex;
@@ -22,19 +12,69 @@ h1.call-to-action {
     justify-content: space-evenly;
 }
 
-.contact-left {
-    flex-direction: left;
-    align-items: start;
-    gap: 20px;
+.contact-inputs {
+    border: 2px solid #AC1313;
+    width: 367px;
 }
 
-.contact-right {
-    flex-direction: right;
-    align-items: start;
-    gap: 20px;
+.email-communication button {
+    background-color: #AC1313;
+    
+    color: white;
+    padding: 20px;
+    text-align: center;
+
+    /* Size of Cards */
+    width: 256px;
+    height: 371px;
+
+    /* Center Text in Box */
+    display: flex;
+    align-items: center; 
+    justify-content: center;
+
+    /* Box Shadow */
+    box-shadow: 15px 15px black;
+
 }
 
-.contact-right img {
-    width: 50px;
-    height: 50px;
+.email-communication button:hover {
+    transform: translateY(-5px); /* Slightly move up on hover */
+    transition: transform 0.3s ease; /* Smooth transition */
+    box-shadow: 8px 8px 15px #FB9B00; /* make shadow larger on hover */
+}
+
+
+.other-communication {
+    /* Display Content vertically centred */
+    justify-content: center;
+    gap: 60px;
+
+
+    overflow-x: hidden;
+    background-color: rgba(255, 255, 255, 0.8);
+
+    padding: 5px 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+
+    img {
+        width: 50px;
+        height: 50px;
+    }
+
+    a {
+        text-decoration: none;
+        font-family: 'Martion Mono', monospace;
+        font-size: 30px;
+        color: #333;
+
+        display: flex;
+
+        padding: 0px;
+        transition: background-color 0.3s, color 0.3s;
+    }
+
+    a:active {
+        color: #FB9B00;
+    }
 }

@@ -60,7 +60,7 @@ html, body {
 
   /* Click Effects */
   nav a:active {
-    color: firebrick;
+    color: #AC1313;
   }
 
   main {
