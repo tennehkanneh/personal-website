@@ -1,6 +1,5 @@
 body { 
     display: flex;
-    
     align-items: center;
     min-height: 100vh;      
     margin: 0; 
@@ -11,7 +10,58 @@ section {
   
 }
 
+/* Align for elements center*/
+form > inputs, textarea {
+    display: block;
+    align-content: center;
+}
 
+.email-communication {
+    /* Form takes up 2/3rd of page with 20px padding around*/
+    width: calc(100% * (2/3));
+
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Center form contents vertically */
+    justify-content: center; /* Center form contents horizontally */
+    
+}
+
+/* Name and Email to be displayed side by side*/
+.required-inputs-container {
+    display: flex;
+    width: 600px;
+    justify-content: space-between;
+}
+
+.required-inputs-container input[type="text"],
+.required-inputs-container input[type="email"] {
+    /* 50% of the div width -5px for spacing between */
+    width: calc(50% - 5px);
+    
+    border: 1px solid #AC1313;
+    padding: 8px;
+   
+    box-sizing: border-box;
+}
+
+.contact-inputs {
+    font-family: monospace;
+
+    border: 1px solid #AC1313;
+    width: 600px;
+    margin-top: 10px;
+
+    /* Add spacing between elements */
+    padding: 8px;
+    box-sizing: border-box;
+}
+
+textarea.contact-inputs {
+    width: 600px;
+    height: 250px;
+    resize: none;
+}
 
 .email-communication button {
     background-color: #AC1313;
@@ -47,6 +97,7 @@ section {
     display: flex;
     flex-direction: column;
     justify-content: center;
+    width: calc(100% * (1/3));
 
     gap: 30px;
     padding: 30px;
