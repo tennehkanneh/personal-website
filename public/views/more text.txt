@@ -1,0 +1,70 @@
+
+
+.email-communication {
+    width: 2/3px;
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+
+
+.contact-inputs {
+    border: 2px solid #AC1313;
+    width: 367px;
+}
+
+
+
+.email-communication {
+    width: 66.66%;
+    padding: 20px;
+    display: flex;
+    /* Enable flexbox for form content */
+    flex-direction: column;
+    /* Arrange form elements vertically */
+    align-items: center;
+    /* Center form elements horizontally */
+}
+
+.email-communication>div {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.contact-inputs-container {
+    display: flex;
+    /* Place name and email inputs side by side */
+    width: 100%;
+    /* Take up full width of email-communication */
+    justify-content: space-between;
+    /* Distribute space evenly */
+}
+
+.contact-inputs-container input[type="text"],
+.contact-inputs-container input[type="email"] {
+    width: 48%;
+    /* Adjust width to fit side by side with spacing */
+    border: 2px solid #AC1313;
+    padding: 8px;
+    /* Add padding for better appearance */
+    box-sizing: border-box;
+    /* Include padding and border in width calculation */
+}
+
+.contact-inputs {
+    border: 2px solid #AC1313;
+    width: calc(100% - 4px);
+    /* Full width minus border */
+    margin-top: 10px;
+    /* Add spacing between elements */
+    padding: 8px;
+    box-sizing: border-box;
+}
+
+textarea.contact-inputs {
+    height: 150px;
+    resize: vertical;
+}
+

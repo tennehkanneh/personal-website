@@ -1,4 +1,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Martian+Mono:wght@100..800&display=swap');
+@font-face {
+  font-family: 'Nico Mojo';
+  src: url('/public/src/NicoMoji-Regular.ttf') format('truetype'); /* Path to your TTF file */
+
+}
 
 html, body {
     font-family: 'Martion Mono', monospace;
@@ -6,6 +11,12 @@ html, body {
     padding: 0;
     width: 100%;
     height: 100%;
+
+    h1 {
+      font-family: 'Nico Mojo';
+      font-size: 45px;
+      color: #AC1313;
+    }
   }
  
   
@@ -48,7 +59,7 @@ html, body {
     text-decoration: none;
     font-size: 20px;
     color: #333;
-    padding: 10px 15px;
+    padding: 40px 30px;
     transition: background-color 0.3s, color 0.3s;
   }
 
@@ -61,11 +72,11 @@ html, body {
   nav a:active {
     color: #AC1313;
   }
-
-  main {
-    width: 100%;
-  }
   /************************************************ END OF: Navigation Bar CSS ************************************************/
 
 }
 /***************************************************** End OF: Header CSS *****************************************************/
+
+main {
+  width: 100%;
+}

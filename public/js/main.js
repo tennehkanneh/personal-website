@@ -3,17 +3,14 @@ function loadPage(page, event = null) {
         event.preventDefault();
     }
 
-    fetch(`/public/pages/${page}.html`)
+    fetch(`/public/views/${page}.html`)
         .then(response => {
             if (!response.ok) throw new Error("404 PAGE NOT FOUND Page");
             return response.text();
         })
         .then(html => {
-
-            document.getElementById("content").innerHTML = html;
-            window.history.pushState({ page: page }, null, page);
-            sessionStorage.setItem(page, html);
-
+            document.getElementById("content-area").innerHTML = html;
+    
         })
         .catch(error => {
             console.error("Error loading content:", error);
@@ -28,7 +25,7 @@ window.addEventListener("popstate", function (event) {
     if (event.state && event.state.page) {
         const cachedPage = sessionStorage.getItem(event.state.page);
         if (cachedPage) {
-            document.getElementById("content").innerHTML = cachedPage;
+            document.getElementById("content-area").innerHTML = cachedPage;
         } else {
             loadPage(event.state.page);
         }

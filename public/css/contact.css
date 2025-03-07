@@ -1,80 +1,81 @@
-main {
-    padding-top: 80px;
-    display: grid;
-    grid-template-columns: 1fr 1fr; 
-}
-
-.email-communication {
-    color: black;
-    height: 100vh;
+body { 
     display: flex;
+    
     align-items: center;
-    justify-content: space-evenly;
+    min-height: 100vh;      
+    margin: 0; 
+}   
+
+section {
+    display: flex;
+  
 }
 
-.contact-inputs {
-    border: 2px solid #AC1313;
-    width: 367px;
-}
+
 
 .email-communication button {
     background-color: #AC1313;
-    
+    border: none;
+
+    width: 256px;
+    height: 37px;
+
+    font-family: 'Martion Mono', monospace;
     color: white;
-    padding: 20px;
     text-align: center;
 
-    /* Size of Cards */
-    width: 256px;
-    height: 371px;
-
-    /* Center Text in Box */
+    padding: 20px;
     display: flex;
-    align-items: center; 
+    align-items: center;
     justify-content: center;
-
-    /* Box Shadow */
     box-shadow: 15px 15px black;
+    margin-top: 20px;
 
 }
 
 .email-communication button:hover {
-    transform: translateY(-5px); /* Slightly move up on hover */
-    transition: transform 0.3s ease; /* Smooth transition */
-    box-shadow: 8px 8px 15px #FB9B00; /* make shadow larger on hover */
+    transform: translateY(-5px);
+  
+    transition: transform 0.3s ease;
+   
+    box-shadow: 8px 8px 15px #FB9B00;
+  
 }
 
-
 .other-communication {
-    /* Display Content vertically centred */
+    /* Display Content vertically centered */
+    display: flex;
+    flex-direction: column;
     justify-content: center;
-    gap: 60px;
 
+    gap: 30px;
+    padding: 30px;
+}
 
-    overflow-x: hidden;
-    background-color: rgba(255, 255, 255, 0.8);
+.communication-link {
+    display: inline-flex;
+    align-items: center;
+    text-decoration: none;
 
-    padding: 5px 10px;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    color: #333;
+    font-family: 'Martion Mono', monospace;
+    font-size: 30px;
+
+    transition: opacity 0.3s ease;
+    white-space: nowrap;
 
     img {
-        width: 50px;
-        height: 50px;
+        width: 60px;
+        height: 60px; 
+        margin-right: 10px;
     }
 
-    a {
-        text-decoration: none;
-        font-family: 'Martion Mono', monospace;
-        font-size: 30px;
-        color: #333;
-
-        display: flex;
-
-        padding: 0px;
-        transition: background-color 0.3s, color 0.3s;
+    
+    :hover {
+        opacity: 0.7;
     }
 
-    a:active {
+    :active {
         color: #FB9B00;
     }
 }
