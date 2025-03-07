@@ -1,17 +1,18 @@
-body { 
+body {
     display: flex;
     align-items: center;
-    min-height: 100vh;      
-    margin: 0; 
-}   
+    min-height: 100vh;
+    margin: 0;
+}
 
 section {
     display: flex;
-  
+
 }
 
 /* Align for elements center*/
-form > inputs, textarea {
+form>inputs,
+textarea {
     display: block;
     align-content: center;
 }
@@ -22,9 +23,11 @@ form > inputs, textarea {
 
     display: flex;
     flex-direction: column;
-    align-items: center; /* Center form contents vertically */
-    justify-content: center; /* Center form contents horizontally */
-    
+    align-items: center;
+    /* Center form contents vertically */
+    justify-content: center;
+    /* Center form contents horizontally */
+
 }
 
 /* Name and Email to be displayed side by side*/
@@ -38,10 +41,10 @@ form > inputs, textarea {
 .required-inputs-container input[type="email"] {
     /* 50% of the div width -5px for spacing between */
     width: calc(50% - 5px);
-    
+
     border: 1px solid #AC1313;
     padding: 8px;
-   
+
     box-sizing: border-box;
 }
 
@@ -85,11 +88,11 @@ textarea.contact-inputs {
 
 .email-communication button:hover {
     transform: translateY(-5px);
-  
+
     transition: transform 0.3s ease;
-   
+
     box-shadow: 8px 8px 15px #FB9B00;
-  
+
 }
 
 .other-communication {
@@ -112,21 +115,23 @@ textarea.contact-inputs {
     font-family: 'Martion Mono', monospace;
     font-size: 30px;
 
-    transition: opacity 0.3s ease;
+    transition: opacity 0.3s ease, color 0.3s ease;
     white-space: nowrap;
 
-    img {
-        width: 60px;
-        height: 60px; 
-        margin-right: 10px;
-    }
 
-    
-    :hover {
-        opacity: 0.7;
-    }
+}
 
-    :active {
-        color: #FB9B00;
-    }
+.communication-link img {
+    width: 60px;
+    height: 60px;
+    margin-right: 10px;
+    transition: opacity 0.3s ease;
+}
+
+.communication-link:hover {
+    opacity: 0.7;
+}
+
+.communication-link:active {
+    color: #FB9B00;
 }
