@@ -30,7 +30,7 @@ section {
     gap: 5px; 
 }
 
-.required-inputs div {
+.required-inputs > div {
     width: calc(50% - 6px); 
 }
 
@@ -48,6 +48,14 @@ section {
 textarea.contact-inputs {
     height: 250px;
     resize: none;
+}
+
+.error-txt {
+    font-size: 14.5px;
+    color: #FB9B00;
+
+    margin-top: 4px;
+    display: none;
 }
 
 .email-communication button {
