@@ -1,17 +1,4 @@
-<!doctype html>
-
-<body>
-  <!----------------------------------------- START OF: Name, School, Major, etc. ----------------------------------------->
-  <div>
-    <h1>Tenneh Kanneh</h1>
-    <h2>Boise State Univeristy</h2>
-    <h3>Computer Science</h3>
-    <h2>She/Her/Hers</h2>
-  </div>
-  <!----------------------------------------- END OF: Name, School, Major, etc. ----------------------------------------->
-
-  <!----------------------------------------- START OF: About Me ----------------------------------------->
-    <div id="bio">
+<div id="bio">
       <p>Lorem ipsum odor amet, consectetuer adipiscing elit. 
         Urna quam phasellus tristique quisque suscipit congue tortor ut. 
         Adipiscing vulputate nibh elit class vestibulum platea neque ac ornare. 
@@ -52,7 +39,3 @@
         Maximus quisque ante ex iaculis enim lorem. Vo
       </p>
     </div>
-  <!----------------------------------------- END OF: About Me ----------------------------------------->
-</body>
-
-</html>
