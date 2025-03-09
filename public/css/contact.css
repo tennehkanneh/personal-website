@@ -10,13 +10,6 @@ section {
 
 }
 
-/* Align for elements center*/
-form>inputs,
-textarea {
-    display: block;
-    align-content: center;
-}
-
 .email-communication {
     /* Form takes up 2/3rd of page with 20px padding around*/
     width: calc(100% * (2/3));
@@ -30,38 +23,29 @@ textarea {
 
 }
 
-/* Name and Email to be displayed side by side*/
-.required-inputs-container {
+.required-inputs {
     display: flex;
     width: 600px;
     justify-content: space-between;
+    gap: 5px; 
 }
 
-.required-inputs-container input[type="text"],
-.required-inputs-container input[type="email"] {
-    /* 50% of the div width -5px for spacing between */
-    width: calc(50% - 5px);
-
-    border: 1px solid #AC1313;
-    padding: 8px;
-
-    box-sizing: border-box;
+.required-inputs div {
+    width: calc(50% - 6px); 
 }
 
 .contact-inputs {
-    font-family: monospace;
-
-    border: 1px solid #AC1313;
-    width: 600px;
     margin-top: 10px;
+    font-family: monospace;
+    border: 1px solid #AC1313;
 
-    /* Add spacing between elements */
-    padding: 8px;
+    width: 100%; /* Instead of specifing the width to an exact px have it be 100% of parent div */
     box-sizing: border-box;
+
+    padding: 8px;
 }
 
 textarea.contact-inputs {
-    width: 600px;
     height: 250px;
     resize: none;
 }
