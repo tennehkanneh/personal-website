@@ -11,19 +11,23 @@
 
     <div class="email-communication">
       <h2 style="font-size: 35px; text-align: left; margin-bottom: 38px;">Get in Touch</h2>
-      <form action="">
-        <div class="required-inputs-container">
-          
-            <input type="text" placeholder="full name (required)" class="contact-inputs" required>
-         
-          
-            <input type="email" placeholder="email (required)" class="contact-inputs" required>
-          
+      <form action="#">
+        <div class="required-inputs">
+          <div>
+            <input type="text" placeholder="Full Name (required)" id="name" class="contact-inputs" autocomplete="off"
+              required>
+          </div>
+          <div>
+            <input type="email" placeholder="Email (required)" id="email" class="contact-inputs" autocomplete="off"
+              required>
+          </div>
         </div>
-        <input type="text" placeholder="subject" class="contact-inputs">
-        
-          <textarea placeholder="type me a message......" class="contact-inputs"></textarea>
-     
+        <div>
+          <input type="text" placeholder="Subject" class="contact-inputs">
+          <div class="textarea-field field">
+            <textarea placeholder="Type Me a Message......" id="message" class="contact-inputs"></textarea>
+          </div>
+        </div>
         <button type="submit">SUBMIT</button>
       </form>
     </div>
